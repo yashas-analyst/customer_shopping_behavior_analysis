@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-An analysis of 3,900 customer transactions to understand revenue drivers, purchasing behavior, and product performance — covering the full analytics pipeline from data cleaning to dashboard creation and business reporting.
+An analysis of 3,900 customer transactions to understand revenue drivers, purchasing behavior, and product performance  covering the full analytics pipeline from data cleaning to dashboard creation and business reporting.
 
 ## 🎯 Objective
 
