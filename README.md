@@ -1,140 +1,88 @@
-# customer_shopping_behavior_analysis
+# 🛍️ Customer Shopping Behavior Analysis
 
-This project analyzes customer shopping patterns using transactional data. The goal is to understand revenue drivers, customer purchasing behavior, and product performance using SQL and Power BI. The project covers the complete analytics pipeline   from data loading to dashboard creation and business reporting.
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
-1. Overview
+## 📌 Overview
 
-The analysis focuses on identifying:
+An analysis of 3,900 customer transactions to understand revenue drivers, purchasing behavior, and product performance — covering the full analytics pipeline from data cleaning to dashboard creation and business reporting.
 
-Top performing product categories
+## 🎯 Objective
 
-Customer segments that spend the most
+Identify which customer segments, categories, and seasons drive the most revenue, and translate those patterns into marketing and inventory recommendations.
 
-Subscription vs non-subscription behavior
+## 🛠️ Tools Used
 
-Seasonal sales trends
+| Tool | Purpose |
+|---|---|
+| 🗄️ MySQL | Data cleaning and SQL analysis |
+| 🧮 Excel | Initial data inspection |
+| 📊 Power BI | Dashboard and visualization |
+| 📝 MS Word | Final business report |
 
-Payment and shipping preferences
+## 📂 Dataset
 
-The final output includes a SQL analysis, a Power BI dashboard, and a written report summarizing insights and recommendations.
+- **Records:** 3,900 transactions
+- **Columns:** 18
+- **Fields:** demographics (age, gender, location), purchase details (category, price, season, size), behavior (subscription, payment, shipping, discounts)
 
-2. Dataset
+## 🧹 Data Cleaning
 
-Rows: 3,900
+- ✅ Imported CSV into MySQL and verified structure
+- ✅ Standardized column names
+- ✅ Removed spaces and special characters
+- ✅ Converted text fields to usable formats
 
-Columns: 18
+## 📈 SQL Analysis
 
-Data type: Customer purchase transactions
+Answered key business questions including:
+- Which category generates the highest revenue?
+- Which age group spends the most?
+- Which season drives the most sales?
 
-Includes fields related to:
+## 📊 Power BI Dashboard
 
-Demographics (Age, Gender, Location)
+**KPIs tracked:** Total Revenue · Total Customers
 
-Purchase details (Category, Price, Season, Size)
+**Visuals:** Category-wise revenue · Spending by age and gender · Seasonal trends · Payment and shipping breakdown · Discount usage
 
-Behavior (Subscription, Payment, Shipping, Discounts)
+**Interactivity:** slicers for Category, Gender, Shipping Type, and Season
 
-Dataset was provided in CSV format.
+![Dashboard Screenshot](dashboard-screenshot.png)
 
-3. Tools Used
+## 🔍 Key Insights
 
-MySQL – Data cleaning and SQL queries
+- 👕 Clothing generates the highest revenue of any category
+- 🎂 Customers aged 46–60 spend the most
+- 🔓 Unsubscribed users outspend subscribed users
+- 💳 PayPal is the preferred payment method
+- 🍂 Fall is the peak sales season
+- 🚚 Free shipping drives customer conversion
 
-Excel – Initial data inspection
+## 📘 How to Run
 
-Power BI – Dashboard and data visualization
+1. Clone the repository
+2. Import the dataset (CSV) into MySQL
+3. Run the SQL queries in [`customer_behavior_sql_query.sql`](customer_behavior_sql_query.sql)
+4. Open [`Customer_Shopping.pbix`](Customer_Shopping.pbix) to view the dashboard
+5. Read the final report in [`Customer_Shopping_Behavior.docx`](Customer_Shopping_Behavior.docx)
 
-MS Word – Final business report
+## 🧪 Skills Demonstrated
 
-4. Project Steps
-✓ Load Dataset
+- SQL querying and aggregation
+- Data cleaning
+- Power BI dashboard design
+- Business reporting
 
-Imported the CSV into MySQL and verified structure.
+## 📁 Project Files
 
-✓ Data Cleaning
+- [`customer_behavior_sql_query.sql`](customer_behavior_sql_query.sql) — SQL analysis queries
+- [`Customer_Shopping.pbix`](Customer_Shopping.pbix) — Power BI dashboard
+- [`shopping_behavior_updated.csv`](shopping_behavior_updated.csv) — Dataset
+- [`Customer_Shopping_Behavior.docx`](Customer_Shopping_Behavior.docx) — Full business report
 
-Standardized column names
+## 👤 Author
 
-Removed spaces and special characters
-
-Converted text fields to usable formats
-
-✓ SQL Analysis
-
-Used SQL to answer business questions such as:
-
-Which category generates highest revenue?
-
-Which age group spends most?
-
-Which season drives most sales?
-
-✓ Power BI Dashboard
-
-Created interactive dashboard with filters, KPIs, and visuals.
-
-✓ Business Report
-
-Summarized insights and recommendations in MS Word.
-
-5. Dashboard Highlights
-
-The Power BI dashboard includes:
-
-Total revenue and customer KPIs
-
-Category-wise revenue
-
-Spending by age and gender
-
-Seasonal trends
-
-Payment and shipping breakdown
-
-Discount usage
-
-Interactive slicers include:
-
-Category
-
-Gender
-
-Shipping type
-
-Season
-
-6. Key Results (Insights)
-
-Clothing category generates the highest revenue
-
-Customers aged 46–60 spend the most
-
-Unsubscribed users spend more than subscribed users
-
-PayPal is the preferred payment method
-
-Fall season has highest sales
-
-Free shipping drives customer conversion
-
-7. How to Run
-
-Step 1: Clone repository
-
-git clone <repository-link>
-
-
-Step 2: Import dataset (CSV) into MySQL
-
-Step 3: Run SQL queries located in the /SQL folder
-
-Step 4: Open the Power BI file (.pbix) to view dashboard
-
-Step 5: Read the final report in /Report
-
-8. Project Structure
-/Dataset
-/SQL
-/PowerBI
-/Report
-README.md
+**Yashas M**
+[GitHub](https://github.com/yashas-analyst) · [LinkedIn](https://www.linkedin.com/in/yashas-m-088b48350/)
